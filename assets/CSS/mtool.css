@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+.full_screen{
+    min-width: 100vw;
+    min-height: 100vh;
+    background: url(../images/bright-chart-data-210607.jpg) left/cover no-repeat fixed;
+    
+}
+.logo_human{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+}
+.container{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 280px;
+    height: 340px;
+    padding: 30px;
+    border: 1px transparent rgb(46, 44, 44);
+    border-radius: 4rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(7, 7, 7, 0.9);
+    box-shadow: 10px 10px 300px rgb(49, 28, 97);
+}
+h2{
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    float: left;
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+}
+.button1{
+    border: none;
+    padding: 10px;
+    background: transparent;
+    color: white;
+    width: 100%;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid red;
+    outline: none;
+}
+.button2{
+    appearance: none;
+    border: none;
+    background: transparent;
+    color: red;
+    outline: none;
+}
+.button3{
+    padding: 15px;
+    border: none;
+    outline: none;
+    background: rgba(43, 95, 8, 0.5);
+    color: black;
+    text-transform: uppercase;
+    border-radius: 50%;
+    margin-top: 2rem;
+    font-weight: bold;
+    transition: 1s ease-in-out;
+}
+.button3:hover{
+    background: rgba(177, 134, 18, 0.9);
+    border: 2px solid black;
+    padding: 18px;
+    outline: none;
+}
+.footer_banner{
+    position: fixed;
+    top: 85%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    background: rgba(7, 7, 7, 0.9);
+
+}
+.footer_text{
+    padding: 10px;
+    margin: 0;
+}
+.rain{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/rain_PNG13468.png) center/cover no-repeat fixed;
+    animation: rain .4s linear infinite;
+}
+@keyframes rain{
+    from{background-position: 0% 100%;}
+    to{background-position: -20% 0%;}
+}
+
+

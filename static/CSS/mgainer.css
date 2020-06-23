@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(158, 104, 104);
+}
+h1{
+    color: blue;
+}
+.table {
+    font-size: 15px; 
+    font-family: Arial;
+    border-collapse: collapse; 
+    border: 2px solid black;
+    transition: 2s;
+
+}
+
+.table td, th {
+    padding: 15px;
+}
+
+.table tr:nth-child(even) {
+    background: rgb(22, 133, 127);
+}
+
+.table tr:hover {
+    background: rgb(143, 9, 9);
+    color: white;
+    cursor: pointer;
+    
+}
+.container{
+    display: flex;
+    background: rgba(119, 192, 152,0.6);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title_gain{
+    text-transform: uppercase;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 15px;
+    font-weight: bolder;
+    background: rgba(0,0,0,0.3);
+    display: inline-block;
+    box-shadow: 50px 35px 80px rgb(160, 199, 55);
+    padding: 10px;
+    text-align: center;
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.space1{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)), url(../images/a-coin-bank-bargain-164467.jpg) center/cover no-repeat fixed;
+}
+.space3{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)), url(../images/a-coin-bank-bargain-164467.jpg) center/cover no-repeat fixed;
+}
+.marq{
+    margin: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bolder;
+    color: whitesmoke;
+    overflow: hidden;
+    height: 80%;
+}
+.inner{
+    padding: 40px;
+
+}
+/*******NAVBAR*******/
+a{
+    text-decoration: none;
+    display: block;
+}
+.nav_header{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+}
+.nav_toggle{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 2s;
+}
+.nav_toggle:hover{
+    transform: scale(1.5);
+}
+.nav_link{
+    display: block;
+    padding: 1rem 2rem;
+    background: black;
+    color: rgb(77, 11, 11);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 2s;
+}
+.nav_link:hover{
+    color: rgb(197, 26, 26);
+    padding-left: 5rem;
+    text-shadow: 2px 2px rgb(85, 78, 78);
+    background: #000000;
+    border: 1px solid rgb(54, 4, 4);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+/* height nav menu 321.5 */
+.nav_links{
+    height: 0;
+    overflow: hidden;
+    transition: 2s;
+}
+@media screen and (min-width:900px){
+    .nav_toggle{
+        display: none;
+    }
+    .nav_links{
+        display: flex;
+        height: auto;
+    }
+    .nav_icons{
+        display: flex;
+    }
+    .nav_icon{
+        padding: 0.6rem;
+        color: black;
+        transition: 2s;
+    }
+    .nav_icon:hover{
+        transform: translateY(-7px)
+    }
+    .nav_center{
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .nav_header{
+        padding: 1.2rem;;
+    }
+    .nav_link{
+        font-size: 13px;
+        padding: 10px;
+        background: transparent;
+        font-weight: bold;
+    }
+    .nav_link:hover{
+        padding: 10px;
+        background: transparent;
+        border: none;
+    }
+    .nav_center{
+        width: 100%;
+    }
+    .tool_link{
+        letter-spacing: 0.6rem;
+    }
+
+}
+.navbar1{
+    background: rgb(41, 7, 7);
+    padding: 10px;
+}
+.tool_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.tool_link{
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.thumb{
+    padding-right: 3rem;
+    padding-left:  3rem;
+}
+.thumbl,.thumbr{
+    transition: 2s;
+    animation: show 2s ease-in-out infinite;
+}
+@keyframes show {
+    0%{
+        color: red;
+    }
+    20%{
+        color: aqua;  
+    }
+    40%{
+        color: #ffffff;
+    }
+    60%{
+        color: gold;
+    }
+    80%{
+        color: blue;
+    }
+    100%{
+        color: green;
+    }
+}
+/****************end of navbar****************/
+/****************fixed navbar****************/
+
+/**********footer**********/
+.footer{
+    background: rgb(92, 33, 33);
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+.footer_links,.footer_icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+.footer_links{
+    justify-content: space-between;
+}
+.footer_link{
+    color: var(--mainWhite);
+    text-transform: capitalize;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    transition: 1s;
+}
+.footer_link:hover{
+    color: rgb(9, 48, 9);
+    opacity: 0.5;
+    font-weight: bolder;
+    box-shadow: 3px 3px 5px 0 white;
+}
+.footer_icon{
+    font-size: 1.2rem;
+    margin-right: 3rem;
+    background: linear-gradient(black,white);
+    color: black;
+    transition: 2s;
+}
+
+.footer_icon:hover{
+    color: red;
+}

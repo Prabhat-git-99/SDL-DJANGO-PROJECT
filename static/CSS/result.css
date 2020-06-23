@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.comcont{
+    /*background: #ee4a4a;*/
+    background: linear-gradient(-70deg,#ee4e4e 50%, rgb(243, 118, 118) 50%);
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    border-bottom-left-radius: 180px;
+    border-bottom-right-radius: 180px;
+}
+.comtit{
+    background: black;
+    width: 40%;
+    margin-bottom: 40px;
+    text-align: center;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+.title{
+    color: aliceblue;
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 30px;
+    
+}
+.sum{
+    text-align: center;
+    height: 10vh;
+
+}
+.summary{
+    text-transform: uppercase;
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 22px;
+}
+.tabcont{
+    background: yellowgreen;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.minicon{
+    display: grid;
+    grid-template-columns: 49.8vw 0.4vw 49.8vw;
+    height: 80vh;
+}
+.cell1{
+    background: rgb(222, 247, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.cell2{
+    background: rgb(22, 22, 22);
+
+}
+.cell3{
+    background: #4aeed3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table {
+    font-size: 15px; 
+    font-family: Arial;
+    border-collapse: collapse; 
+    border: 2px solid black;
+    transition: 2s;
+    color: rgb(99, 12, 12);
+
+}
+
+.table td, th {
+    padding: 15px;
+}
+
+.table tr:nth-child(even) {
+    background: rgb(22, 133, 127);
+}
+
+.table tr:hover {
+    background: rgb(73, 8, 8);
+    color: white;
+    cursor: pointer;
+    
+}
+.Gtitle{
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+    flex-direction: column;
+}
+/**********table 1**********/
+.table1{
+    font-size: 15px; 
+    font-family: Arial;
+    border-collapse: collapse; 
+    border: 1px solid black;
+    transition: 2s;
+    color: rgb(83, 10, 10);
+}
+.table1 td, th {
+    padding: 10px;
+}
+
+.table1 tr:nth-child(even) {
+    background: rgb(195, 204, 202);
+}
+
+.table1 tr:hover {
+    background: rgb(143, 9, 9);
+    color: white;
+    cursor: pointer;
+    
+}
+.subtitle1{
+    text-transform: uppercase;
+    color: rgb(43, 6, 92);
+
+}
+.bar_area{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+.bar2{
+    background: red;
+}
+.footer{
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(17, 17, 17, 0.5)), url(../images/graph-3078546_1920.png) center/cover no-repeat fixed;
+
+}
+/********end***********/

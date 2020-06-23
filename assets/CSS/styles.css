@@ -1,0 +1,565 @@
+/* Fonts  */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Poppins&display=swap');
+
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    color: var(--mainBlack);
+    background: var(--lightWhite);
+    line-height: 1.4rem;
+    font-size: 1rem;
+}
+
+/* CSS VARIABLES */
+:root{
+    --mainBlack: #000000;
+    --mainWhite:#ffffff;
+    --lightWhite:#cebebe;
+    --primaryColor: rgb(235, 67, 67);
+    --mainTransition: all 0.5s linear;
+    --letterSpacing: 0.20rem;
+    --lightShadow:2px 5px 3px 0px rgba(0,0,0,0,0.25);
+    --darkShadow:4px 5px 3px 0px rgba(0,0,0,0,0.5);
+}
+/* Global Styles*/
+img:not(.nav_logo){
+    width: 100%;
+    display: block;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Poppins",sans-serif;
+    margin-bottom: 2.5rem;
+    letter-spacing: var(--letterSpacing);
+}
+h1{
+    font-size: 3.3rem;
+}
+h2{
+    font-size: 2.3rem;
+}
+h3{
+    font-size: 1.3rem;
+}
+p{
+    margin-bottom: 1.25rem;
+    line-height: 2;
+    font-weight: 300;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.btn_white{
+    text-transform: uppercase;
+    background: var(--mainBlack);
+    letter-spacing: var(--letterSpacing);
+    color: var(--mainWhite);
+    border: 2px solid var(--mainWhite);
+    padding: 0.9rem 2.5rem;
+    display: inline-block;
+    margin: 1rem;
+    transition: var(--mainTransition);
+    cursor: pointer;
+    font-weight: 800;
+}
+.btn_white:hover{
+    color: var(--mainBlack);
+    background: var(--mainWhite);
+    border: 3px solid var(--mainBlack);
+}
+.separator{
+    height: 3px;
+    width: 100vw;
+    background: linear-gradient(to left,rgb(158, 31, 31,0.4),rgb(56, 3, 3,0.8))
+}
+.subtitle{
+    color: #6b2828;
+}
+.section{
+    padding: 5rem 0rem;
+}
+.title_wrapper{
+    margin-bottom: 3rem;
+}
+.title{
+    text-align: center;
+    padding: 1rem 1rem;
+    text-transform: uppercase;   
+    letter-spacing: 1rem;
+
+}
+.section_center{
+    width: 85vw;
+    margin: 4rem auto 2rem auto;
+    max-width: 1170px;
+}
+/***********end of global styles***************/
+/**********Below Navigation*************/
+
+/************ MOST ACTIVE ****************/
+.hero{
+    min-height: calc(100vh - 80.2px);
+    background: var(--primaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero_banner{
+    text-align: center;
+    padding: 0 2rem;
+    color: var(--mainWhite);
+    display: inline-block;
+}
+.hero_title{
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    letter-spacing: 0.6rem;
+}
+.hero_text{
+    width: 80%;
+    margin: 0 auto;
+    letter-spacing: var(--letterSpacing);
+    font-weight: 400;
+}
+.sp{
+    
+    animation: spa 3s linear infinite;
+}
+@keyframes spa{
+    0%{
+        color: white;
+    }
+    15%{
+        opacity: 1;
+        color: grey;
+    }
+    40%{
+        color: #6b2828;
+    }
+    50%{
+        opacity: 0.8;
+        color: green
+    }
+    60%{
+        color: blue;
+    }
+    85%{
+        opacity: 1;
+        color: aqua;
+    }
+    100%{
+        opacity: 1;
+        color: yellow;
+    }
+}
+@media screen and (min-width:668px)
+{
+    .hero{
+        min-height: 100vh;
+        background: linear-gradient(rgba(0,0,0,0.2), rgba(17, 17, 17, 0.5)), url(../images/architecture-buildings-city-219692.jpg) center/cover no-repeat fixed;
+    }
+    .hero_text{
+        font-weight: bold;
+        font-size: 1.4rem;
+        color: rgb(181, 216, 218);
+    }
+}
+/************** END OF MOST ACTIVE *****************/
+/* --------------------------------------------------------------*/
+/*************** GLOBAL MARKETERS ******************/
+.hero_1{
+    max-height: 100vh;
+    background: var(--primaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero_banner_1{
+    text-align: center;
+    padding: 0 2rem;
+    color: var(--mainWhite);
+}
+.hero_title_1{
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 2rem;
+    letter-spacing: 0.6rem;
+}
+.hero_text_1{
+    width: 80%;
+    margin: 0 auto;
+    letter-spacing: var(--letterSpacing);
+    font-weight: 400;
+}
+@media screen and (min-width:668px)
+{
+    .hero_1{
+        min-height: 100vh;
+        background: linear-gradient(rgba(0,0,0,0.8), rgba(17, 17, 17, 1.2)), url(../images/action-adult-city-825430.jpg) center/cover no-repeat fixed;
+    }
+    .hero_title_1{
+        font-size: 2.9rem;
+    }
+    .hero_text_1{
+        font-weight: bold;
+        font-size: 1.4rem;
+        color: rgb(181, 216, 218);
+    }
+}
+
+/************** END OF GLOABL MARKETERS ************/
+/* ---------------------------------------------------------------*/
+/*************** TOP GAINERS ***********************/
+.hero_2{
+    min-height: 100vh;
+    background: var(--primaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero_banner_2{
+    text-align: center;
+    padding: 0 2rem;
+    color: var(--mainWhite);
+}
+.hero_title_2{
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 2rem;
+    letter-spacing: 0.6rem;
+}
+.hero_text_2{
+    width: 80%;
+    margin: 0 auto;
+    letter-spacing: var(--letterSpacing);
+    font-weight: 400;
+}
+@media screen and (min-width:668px)
+{
+    .hero_2{
+        min-height: 100vh;
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(17, 17, 17, 1.5)), url(../images/a-coin-bank-bargain-164467.jpg) center/cover no-repeat fixed;
+    }
+    .hero_title_2{
+        font-size: 2.9rem;
+    }
+    .hero_text_2{
+        font-weight: bold;
+        font-size: 1.4rem;
+        color: rgb(181, 216, 218);
+    }
+}
+/**************** END OF GAINERS *******************/
+/* ---------------------------------------------------------------*/
+/**************** TOP LOOSERS **********************/
+.hero_3{
+    min-height: 100vh;
+    background: var(--primaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero_banner_3{
+    text-align: center;
+    padding: 0 2rem;
+    color: var(--mainWhite);
+}
+.hero_title_3{
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 2rem;
+    letter-spacing: 0.6rem;
+}
+.hero_text_3{
+    width: 80%;
+    margin: 0 auto;
+    letter-spacing: var(--letterSpacing);
+    font-weight: 400;
+}
+@media screen and (min-width:668px)
+{
+    .hero_3{
+        min-height: 100vh;
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(17, 17, 17, 1.5)), url(../images/adult-blank-businessman-326576.jpg) center/cover no-repeat fixed;
+    }
+    .hero_title_3{
+        font-size: 2.9rem;
+    }
+    .hero_text_3{
+        font-weight: bold;
+        font-size: 1.4rem;
+        color: rgb(181, 216, 218);
+    }
+}
+/**************** END OF TOP LOOSERS ***************/
+/*---------------------------------------------------------------*/
+/************** ABOUT US **********************/
+.about{
+    background: var(--mainWhite);
+}
+/* Section added to global */
+/* Title Added to global */
+/* section center added to global */
+.about_img,.about_info{
+    margin-bottom: 4rem;
+}
+.about_info_title{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+@media screen and (min-width:992px){
+
+    .about_center{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .about_img,.about_info{
+        flex: 0 0 calc(50% - 2rem);
+        margin-bottom: 0;
+        align-self: center;
+        position: relative;
+    }
+    .about_img::before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border: 0.1rem solid var(--primaryColor);
+        top: -0.8rem;
+        left: -0.9rem;
+    }
+    .about_photo{
+        position: relative;
+    }
+
+}
+/*************END OF ABOUT US *****************/
+/******************* FOOTER********************/
+.footer{
+    background: rgb(36, 1, 1);
+    color: var(--mainWhite);
+    text-align: center;
+    padding-top: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+.footer_links,.footer_icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+.footer_links{
+    justify-content: space-between;
+}
+.footer_link{
+    color: var(--mainWhite);
+    text-transform: capitalize;
+    font-size: 15px;
+    letter-spacing: 2px;
+    transition: var(--mainTransition);
+}
+.footer_link:hover{
+    color: green;
+    opacity: 0.5;
+    box-shadow: 3px 3px 5px 0 white;
+}
+.footer_icon{
+    font-size: 1.2rem;
+    margin-right: 3rem;
+    background: linear-gradient(black,white);
+    color: black;
+    transition: var(--mainTransition);
+}
+
+.footer_icon:hover{
+    color: red;
+}
+/*****************End of Footer****************/
+/*****************navbar********************/
+/*.navbar{
+    background: red
+}*/
+.nav_icons{
+    display: none;
+}
+.nav_header{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+}
+.nav_toggle{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: var(--mainTransition);
+}
+.nav_toggle:hover{
+    transform: scale(1.5);
+}
+.nav_link{
+    display: block;
+    padding: 1rem 2rem;
+    background: black;
+    color: rgb(77, 11, 11);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: var(--letterSpacing);
+    transition: var(--mainTransition);
+}
+.nav_link:hover{
+    color: var(--primaryColor);
+    padding-left: 5rem;
+    text-shadow: 2px 2px rgb(85, 78, 78);
+    background: #000000;
+    border: 1px solid rgb(54, 4, 4);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+/* height nav menu 321.5 */
+.nav_links{
+    height: 0;
+    overflow: hidden;
+    transition: var(--mainTransition);
+}
+.show_links{
+    height: 321.5px;
+}
+@media screen and (min-width: 1012px){
+    .nav_toggle{
+        display: none;
+    }
+    .nav_links{
+        display: flex;
+        height: auto;
+    }
+    .nav_icons{
+        display: flex;
+    }
+    .nav_icon{
+        padding: 0.6rem;
+        color: black;
+        transition: var(--mainTransition);
+    }
+    .nav_icon:hover{
+        transform: translateY(-7px)
+    }
+    .nav_center{
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .nav_header{
+        padding: 1.2rem;;
+    }
+    .nav_link{
+        font-size: 13px;
+        padding: 10px;
+        background: transparent;
+        font-weight: bold;
+    }
+    .nav_link:hover{
+        padding: 10px;
+        background: transparent;
+        border: none;
+    }
+    .nav_center{
+        width: 100%;
+    }
+    .tool_link{
+        letter-spacing: 0.6rem;
+    }
+
+}
+.navbar1{
+    background: rgb(41, 7, 7);
+    padding: 10px;
+}
+.tool_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.tool_link{
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.thumb{
+    padding-right: 3rem;
+    padding-left:  3rem;
+}
+.thumbl,.thumbr{
+    transition: var(--mainTransition);
+    animation: show 2s ease-in-out infinite;
+}
+@keyframes show {
+    0%{
+        color: red;
+    }
+    20%{
+        color: aqua;  
+    }
+    40%{
+        color: #ffffff;
+    }
+    60%{
+        color: gold;
+    }
+    80%{
+        color: blue;
+    }
+    100%{
+        color: green;
+    }
+}
+/****************end of navbar****************/
+/****************fixed navbar****************/
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--lightWhite);
+    transition: var(--mainTransition);
+    box-shadow: 1px 2px 16px 0px rgb(228, 125, 125);
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

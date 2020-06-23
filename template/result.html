@@ -1,0 +1,93 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type = "text/css" href="http://cdn.pydata.org/bokeh/release/bokeh-1.3.4.min.css">
+    <link rel="stylesheet" type = "text/css" href="http://cdn.pydata.org/bokeh/release/bokeh-widgets-1.3.4.min.css">
+    <link rel="stylesheet" type = "text/css" href="http://cdn.pydata.org/bokeh/release/bokeh-tables-1.3.4.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static './CSS/result.css' %}">
+</head>
+
+    <body>
+        <div class="full">
+            <!-------ID1 Start--------->
+            <div class="comcont">
+                <div class="comtit">
+                    <h2 class="title">{{company | safe}}</h2>
+                </div>
+            </div>
+            <!------END of ID1--------->
+            <!----start of ID2------->
+            <div class="sum">
+                <h3 class="summary">summary</h3>
+            </div>
+            <!-------end of ID2----->
+            <!--------start of ID3-->
+            <div class="tabcont">
+                {{tabcontent | safe}}
+            </div>
+            <!-------end of ID3----->
+            <!------start of ID4--->
+            <div class="sum">
+                <h3 class="summary">visualization</h3>
+            </div>
+            <!-------end of ID4---->
+            <div class="minicon">
+                <div class="cell1">
+                    <div class="graph1">
+                            <h3 class="subtitle1">Open And Close Graph of Last 10 Years</h3>
+                     {{divi | safe}}
+                    </div> 
+                </div>
+                <div class="cell2">
+                </div>
+                <div class="cell3">
+                    <div class="Gtitle">
+                        <h3 class="subtitle1">last 10 days trend</h3>
+                        <div class="last_20">
+                        {{last_20|safe}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+        <div class="bar_area">
+            
+            <div class="bar2">
+                <h3 class="bar_title">Year-Wise High Values</h3>
+                {{bar_high | safe}}
+            </div>
+            <div class="bar2">
+                    <h3 class="bar_title">Year-Wise Low Values</h3>
+                    {{bar_low | safe}}
+            </div>
+        </div>
+        <div class="bar_area">
+            <div class="bar2">
+                    <h3 class="bar_title">Year-Wise Adj Close Values</h3>
+                    {{bar_adj | safe}}
+            </div>
+            <div class="bar2">
+                    <h3 class="bar_title">Year-Wise Close Graph</h3>
+                    {{bar_vol | safe}}
+            </div>
+        </div>
+        </div>
+    </body>
+<script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-1.3.4.min.js"></script>
+<script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-api-1.3.4.min.js"></script>
+<script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-tables-1.3.4.min.js"></script>
+<script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-1.3.4.min.js"></script>
+{{script | safe}}
+{{script1 | safe}}
+{{script2 | safe}}
+{{script3 | safe}}
+{{script4 | safe}}
+
+</html>

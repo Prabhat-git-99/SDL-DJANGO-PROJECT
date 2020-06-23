@@ -1,0 +1,204 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SPD - Stock Prediction Device</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="{% static 'fontawesome-free-5.9.0-web\css\all.min.css' %}">
+    <!-- css file -->
+    <link rel="stylesheet" href="{% static './CSS/styles.css' %}">
+    <!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="{% static './images/favi/apple-touch-icon.png' %}">
+<link rel="icon" type="image/png" sizes="32x32" href="{% static './images/favi/favicon-32x32.png' %}">
+<link rel="icon" type="image/png" sizes="16x16" href="{% static './images/favi/favicon-16x16.png' %}">
+<link rel="manifest" href="{% static './images/favi/site.webmanifest' %}">
+</head>
+<body>
+   <!-- Header-->
+    <header id="home">
+        <!-- nav bar-->
+        <div class="navbar">
+        <nav class="navbar">
+            <div class="nav_center">
+                <!-- nav header -->
+                <div class="nav_header">
+                    <a href="home.html"><img src="{% static '.\images\logo.jpg' %}" alt="logo" class="nav_logo" width="100px" height="40px" /></a>
+                    <button type="button" class="nav_toggle" id="nav_toggle" aria-label="nav_toggler">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <!-- End of nav bar header -->
+                <!-- Nav bar links -->
+                <div class="nav_links" id="nav_links">
+                        <a href="#home" class="nav_link scroll_link">home</a>
+                        <a href="#sc1" class="nav_link scroll_link">most active</a>
+                        <a href="#sc2" class="nav_link scroll_link">most reliable</a>
+                        <a href="#sc3" class="nav_link scroll_link">top Gainers</a>
+                        <a href="#sc4" class="nav_link scroll_link">top Losers</a>
+                        <a href="#sc5" class="nav_link scroll_link">about us</a>
+                </div>
+                <!-- End of nav links-->
+                <!-- Social media nav -->
+                <div class="nav_icons">
+                        <a href="{% static 'https://www.twitter.com' %}" target="
+                        _blank" class="nav_icon"><i class="fab fa-twitter"></i></a>
+                        <a href="{% static 'https://www.facebook.com' %}" target="
+                        _blank" class="nav_icon"><i class="fab fa-facebook"></i></a>
+                        <a href="{% static 'https://www.linkedin.com' %}" target="
+                        _blank" class="nav_icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="{% static 'https://www.pinterest.com' %}" target="
+                        _blank" class="nav_icon"><i class="fab fa-pinterest"></i></a>
+                </div>
+                <!-- End of social media -->
+            </div>
+
+        </nav>
+        <nav class="navbar1">
+            <div class="tool_center">
+                <a href="pretool.html" class="tool_link" target="_blank"><span class="thumb thumbl"><i class="fas fa-arrow-right fa-lg"></i></span>click here to predict success in stock market<span class="thumb thumbr"><i class="fas fa-arrow-left fa-lg"></i></a>
+
+            </div>
+        </nav>
+         
+        </div>
+
+
+        <!-- below navigation -->
+        <!-- MOST ACTIVE -->
+
+        
+        <div class="hero" id="sc1">
+            <div class="hero_banner">
+                <h1 class="hero_title">Most <span class="subtitle sp">Active</span></h1>
+                <p class="hero_text">
+                    Top 10 companies participating very actively in the market amongst the others.
+                </p>
+                <a href="mostactive.html" class="btn_white">Check</a>
+            </div>
+        </div>
+        <div class="separator"></div>
+
+        <!-- END OF MOST ACTIVE -->
+        <!-- GLOBAL MARKETERS -->
+        <div class="hero_1" id="sc2">
+            <div class="hero_banner_1">
+                <h1 class="hero_title_1">Our <span class="subtitle sp">Recommendation</span></h1>
+                <p class="hero_text_1">
+                    The most reliable companies to plan and invest our shares in.
+                </p>
+                <a href="globalmarket.html" class="btn_white">Check</a>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <!-- END OF GLOBAL MARKETERS -->
+        <!-- TOP GAINERS -->
+        <div class="hero_2" id="sc3">
+            <div class="hero_banner_2">
+                <h1 class="hero_title_2">Top <span class="subtitle sp">Gainers</span></h1>
+                <p class="hero_text_2">
+                    Top 10 companies currently gaining most of the  profit!
+                </p>
+                <a href="topgainer.html" class="btn_white">Check</a>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <!-- END OF TOP GAINERS -->
+        <!-- TOP LOSERS -->
+        <div class="hero_3" id="sc4">
+            <div class="hero_banner_3">
+                <h1 class="hero_title_3">Top <span class="subtitle sp">Losers</span></h1>
+                <p class="hero_text_3">
+                    Companies facing losses in their shares over the period.Not a good idea/time to invest in them!
+                </p>
+                <a href="toploser.html" class="btn_white">Check</a>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <!-- END OF TOP LOSERS -->
+    </header>
+   <!-- End of Header -->
+   <!-- about -->
+   <section class="section about" id="sc5">
+       <!-- Title -->
+       <div class="title_wrapper">
+           <h2 class="title">about <span class="subtitle sp">us</span></h2>
+       </div>
+       <!-- End of Title -->
+       <!-- about center -->
+       <div class="about_center section_center">
+           <!-- about image -->
+            <article class="about_img">
+                <img src="{% static './images/3.jpg' %}" class="about_photo" alt="About us">
+            </article>
+           <!-- end of about image -->
+           <!-- about info -->
+           <article class="about_info">
+               <h3 class="about_info_title">PRABHAT SHRAVANI DIMPLE</h3>
+               <p>Third Year Students of Computer Department</p>
+               <p>PRABHAT SINGH,24 
+                  DIMPLE SINGH,22  
+                  SHRAVANI POMAN,29
+               </p>
+               <a href="aboutus.html" class="btn_white">read more</a>
+
+           </article>
+           <!-- end of about info -->
+       </div>
+
+
+       <!-- End of about center -->
+   </section>
+   <!-- end of about -->
+   <!-- Footer -->
+   <footer class="section footer">
+
+        <!--footer Links-->
+        <div class="footer_links">
+            <a href="#home" class="footer_link scroll_link">home</a>
+            <a href="#sc1" class="footer_link scroll_link">most active</a>
+            <a href="#sc2" class="footer_link scroll_link">our reccomendation</a>
+            <a href="#sc3" class="footer_link scroll_link">top Gainers</a>
+            <a href="#sc4" class="footer_link scroll_link">top Losers</a>
+            <a href="#sc5" class="footer_link scroll_link">about us</a>
+        </div>
+        <!-- Footer Icons -->
+        <div class="footer_icons">
+            <a href="https://www.twitter.com" target="
+            _blank" class="footer_icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com" target="
+            _blank" class="footer_icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com" target="
+            _blank" class="footer_icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.pinterest.com" target="
+            _blank" class="footer_icon"><i class="fab fa-pinterest"></i></a>
+        </div>
+        <!-- End of footer icons -->
+        <!-- Copyright -->
+        <p class="copyright">Copyright &copy; SPD - Stock Prediction Device <span id="date"></span> all rights reserved.</p>
+        <!-- End of Copyright -->
+
+   </footer>
+   <!-- Javascript -->
+   <script src="{% static './JS/jsfun.js' %}"></script>
+
+   <!-- End of footer -->
+   {{data}}
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

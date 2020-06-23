@@ -1,0 +1,112 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type = "text/css" href="http://cdn.pydata.org/bokeh/release/bokeh-1.3.4.min.css">
+    <link rel="stylesheet" type = "text/css" href="http://cdn.pydata.org/bokeh/release/bokeh-widgets-1.3.4.min.css">
+    <link rel="stylesheet" type = "text/css" href="http://cdn.pydata.org/bokeh/release/bokeh-tables-1.3.4.min.css">
+    <link rel="stylesheet" href="{% static 'fontawesome-free-5.9.0-web\css\all.min.css' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static './images/favi/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static './images/favi/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static './images/favi/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static './images/favi/site.webmanifest' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Our Reccommendation</title>
+    <link rel="stylesheet" href="{% static './CSS/mloser.css' %}">
+</head>
+<body>
+
+      <div class="navbar">
+            <nav class="navbar">
+                <div class="nav_center">
+                    <!-- nav header -->
+                    <div class="nav_header">
+                            <a href="home.html"><img src="{% static '.\images\logo.jpg' %}" alt="logo" class="nav_logo" width="100px" height="40px" /></a>
+                        <button type="button" class="nav_toggle" id="nav_toggle" aria-label="nav_toggler">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                    <!-- End of nav bar header -->
+                    <!-- Nav bar links -->
+                    <div class="nav_links" id="nav_links">
+                            <a href="home.html" class="nav_link">home</a>
+                            <a href="mostactive.html" class="nav_link">most active</a>
+                            <a href="globalmarket.html" class="nav_link">most reliable</a>
+                            <a href="topgainer.html" class="nav_link">top gainer</a>
+                            <a href="toploser.html" class="nav_link">top Losers</a>
+                    </div>
+                    <!-- End of nav links-->
+                    <!-- Social media nav -->
+                    <div class="nav_icons">
+                            <a href="{% static 'https://www.twitter.com' %}" target="
+                            _blank" class="nav_icon"><i class="fab fa-twitter"></i></a>
+                            <a href="{% static 'https://www.facebook.com' %}" target="
+                            _blank" class="nav_icon"><i class="fab fa-facebook"></i></a>
+                            <a href="{% static 'https://www.linkedin.com' %}" target="
+                            _blank" class="nav_icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="{% static 'https://www.pinterest.com' %}" target="
+                            _blank" class="nav_icon"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                    <!-- End of social media -->
+                </div>
+    
+            </nav>
+            <nav class="navbar1">
+                <div class="tool_center">
+                    <a href="pretool.html" class="tool_link" target="_blank"><span class="thumb thumbl"><i class="fas fa-arrow-right fa-lg"></i></span>click here to predict success in stock market<span class="thumb thumbr"><i class="fas fa-arrow-left fa-lg"></i></a>
+    
+                </div>
+            </nav>
+             
+            </div>
+    <div class="container">
+        <div class="title_gain">most reliable</div>
+        <div class="grid">
+            <div class="cell space1">
+                <marquee behavior="" direction="up" class="marq" scrollamount = "3" onmouseover="this.stop();" onmouseout="this.start();">Even though markets may change, good investing advice is Timeless.<br><br><br> Do the necessary research, study, and analysis before making any investment decisions. <br><br><br>In investing, what is comfortable is rarely profitable. <br><br> </marquee>
+            </div>
+            <div class="cell space2">
+                  {{ table_content|safe }}
+            </div>
+            <div class="cell space3">
+                    <marquee behavior="" direction="up" class="marq" scrollamount = "3" onmouseover="this.stop();" onmouseout="this.start();">There is a risk in everything, so be prepared for the ups and downs.<br><br><br> "The four most dangerous words in investing are: 'this time it's different <br><br><br> Don't blindly follow someone, follow market and try to hear what it is telling you <br><br> </marquee>
+            </div>
+        </div>    
+    </div>         
+    <footer class="section footer">
+
+            <!--footer Links-->
+            <div class="footer_links">
+                <a href="home.html" class="footer_link">home</a>
+                <a href="mostactive.html" class="footer_link">most active</a>
+                <a href="globalmarket.html" class="footer_link">global Marketers</a>
+                <a href="topgainer.html" class="footer_link">top Gainers</a>
+                <a href="toploser.html" class="footer_link">top Losers</a>
+            </div>
+            <!-- Footer Icons -->
+            <div class="footer_icons">
+                <a href="https://www.twitter.com" target="
+                _blank" class="footer_icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com" target="
+                _blank" class="footer_icon"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com" target="
+                _blank" class="footer_icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.pinterest.com" target="
+                _blank" class="footer_icon"><i class="fab fa-pinterest"></i></a>
+            </div>
+            <!-- End of footer icons -->
+            <!-- Copyright -->
+            <p class="copyright">Copyright &copy; SPD - Stock Prediction Device <span id="date"></span> all rights reserved.</p>
+            <!-- End of Copyright -->
+    
+       </footer>
+
+</body>
+<script src="{% static './JS/jsfun.js' %}"></script>
+<script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-1.3.4.min.js"></script>
+<script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-api-1.3.4.min.js"></script>
+<script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-tables-1.3.4.min.js"></script>
+<script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-1.3.4.min.js"></script>
+</html>
